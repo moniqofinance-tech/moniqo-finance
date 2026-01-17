@@ -17,7 +17,7 @@ body {
 /* HEADER/NAV */
 
 nav {
-    background-color:#f1f3d6;
+    background-color:#e4e5cd;
     padding: 5px;
 }
 
@@ -35,7 +35,7 @@ header {
     background-repeat: no-repeat;
     width: 55px;
     text-indent: -9990px;
-    background-image: url("images/Moniqo-LOGO-Green+Transparent+High-Res.png");
+    background-image: url("images/moniqo-logo-green-transparent-upscaled.png");
     background-size: 55px 65px;
     margin-left: 20px;
 
@@ -126,7 +126,7 @@ a:hover {
     flex-direction: column;
     background-color: #f8faf0;
     color: #f1f3d6;
-    background-image: url("images/darker-nature-landscape.jpg");
+    background-image: url("images/cool-forest.jpg");
     background-size: 100%;
     background-position: center;
     
@@ -156,15 +156,15 @@ a:hover {
 
 
 .Left-Section {
-    background-color: #f1f3d6;
-    color: #044538;
+    background-color: #083930;
+    color: #d7b056;
 
 }
 
 .Right-Section {
+    background-color: #d3d4bf;
+    color: #044538;
     
-    background-color: #083930;
-    color: #d7b056;
 }
 
 
