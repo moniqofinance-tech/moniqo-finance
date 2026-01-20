@@ -189,6 +189,9 @@ a:hover {
     background-color: #d3d4bf;
     color: #044538;
     padding: 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -210,11 +213,13 @@ a:hover {
 }
 
 .Footer-Image {
-    width: 60px;
-    object-fit: cover;
-    position: relative;
-    left: 920px;
-    background-size: 5px 60px;
+    text-indent: -9990px;
+    height: 30px;
+    width: 45px;
+    background-image: url("https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    margin-left: 48.5%;
 }
 /* ABOUT US SECTION */
 
@@ -242,6 +247,10 @@ a:hover {
     .Image {
         align-self: center;
     }
+
+    .Footer-Image {
+        margin-left: 48%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -253,11 +262,19 @@ a:hover {
     .Image {
         width: 300px;
     }
+
+    .Footer-Image {
+        margin-left: 45%;
+    }
 }
 
 @media (max-width: 400px) {
     li {
         margin-right: 11px;
         font-size: 15px;
+    }
+
+    .Footer-Image {
+        margin-left: 43%;
     }
 }
