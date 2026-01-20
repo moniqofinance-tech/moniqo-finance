@@ -11,8 +11,23 @@ html {
 body {
     margin: auto;
     padding: auto;
+
+    
 }
 
+main {
+    opacity: 0;
+    animation: fadeIN 2s forwards;
+}
+
+@keyframes fadeIN {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
 /* HEADER/NAV */
 
 nav {
@@ -73,7 +88,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #069175;
 }
 
 /* BODY */
@@ -129,6 +144,8 @@ a:hover {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+
+    animation-timing-function: ease-in;
     
 }
 
@@ -167,20 +184,38 @@ a:hover {
     
 }
 
+.Footer-Section {
+    margin-top: 0px;
+    background-color: #d3d4bf;
+    color: #044538;
+    padding: 1px;
+}
 
 
 .Image {
 
     box-shadow: 0 0 25px rgb(29, 28, 28);
-    border-radius: 10px;
+    border-radius: 50px;
     width: 500px;
-    max-width: 100%;
     height: auto;
+    object-fit: cover;
     margin: 40px;
-
+    
 }
 
+.Footer-Section .Footer-Sub-Text {
+    font-family: "Playfair Display";
+    font-size: 15px;
+    text-align: center;
+}
 
+.Footer-Image {
+    width: 60px;
+    object-fit: cover;
+    position: relative;
+    left: 920px;
+    background-size: 5px 60px;
+}
 /* ABOUT US SECTION */
 
 
@@ -199,28 +234,30 @@ a:hover {
 
 /* uh  */
 
-.fadee {
-
-    animation: fadeIN 5s both;
-}
-
-@keyframes fadeIN {
-
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .Side-Section {
         flex-direction: column;
     }
 
     .Image {
         align-self: center;
+    }
+}
+
+@media (max-width: 500px) {
+    li {
+        margin-right: 13px;
+        font-size: 16px;  
+    }
+
+    .Image {
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    li {
+        margin-right: 11px;
+        font-size: 15px;
     }
 }
