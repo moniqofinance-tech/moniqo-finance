@@ -1,0 +1,129 @@
+body{
+min-height: 100vh;
+margin: 0;
+}
+
+.Header{
+position: Sticky;
+top: 0;
+font-size: 110%;
+width: 100%;
+margin: 0px;
+background: #ffffff;
+z-index: 10;
+}
+
+.HeaderImgHold{
+display: flex;
+width: 100%;
+height: auto;
+justify-content: center;
+align-items: center;
+}
+
+.HeaderImg{
+width: 5%;
+height: auto;
+object-fit: scale-down;
+}
+
+.HorzBar{
+background: #d68a40;
+width: 90%;
+margin-inline: auto;
+margin-top:10px;
+height: 2.5px;
+}
+
+.LinkList{
+align-items: center;
+margin-top: 10px;
+}
+
+.LinkList:hover{
+cursor: default;
+}
+
+.Link{
+margin: 20px;
+color: #d68a40;
+}
+
+.Link:hover{
+margin: 20px;
+color: #de9f62;
+cursor: pointer;
+}
+
+.CurrLink{
+margin: 10px;
+color: #de9f62;
+}
+
+.CurrLink:hover{
+cursor: pointer;
+}
+
+.Title{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Title{
+color: #d68a40;
+}
+
+.SlideShow{
+position: relative;
+z-index: 1;
+width: 100%;
+display: flex;
+overflow-inline: clip;
+anchor-name: --slideShow;
+}
+
+.SlideShow::-webkit-scrollbar {
+display: none;
+}
+
+.slideImages{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-right: 1em;
+}
+
+.SImg{
+width: 33em;
+height: auto;
+padding: 2%;
+background: cornflowerblue;
+font-size: 400%;
+text-align:center;
+align-content: center;
+translate: -189%;
+border-style: solid;
+}
+
+
+.LeftSilde{
+position: fixed;
+position-anchor: --slideShow;
+position-area: left center;
+height: 100%;
+width: 35em;
+opacity: 0.1;
+z-index: 2;
+}
+
+.RightSilde{
+position: fixed;
+position-anchor: --slideShow;
+position-area: right center;
+height: 100%;
+width: 35em;
+opacity: 0.1;
+z-index: 2;
+}
+

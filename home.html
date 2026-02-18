@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+		<title>
+			Moniqo
+		</title>
+		<link rel="stylesheet" href="Styles.css">
+	</head>
+	<body>
+		<div class="Header">
+			<div class="HeaderImgHold">
+				<img src="Imgs/Icon.png" class="HeaderImg" >
+			</div>
+			<div>
+				<div class="HorzBar"></div>
+				<div class="LinkList" align="middle">
+					<a class="CurrLink">Home</a>
+					<a class="Link">About</a>
+					<a class="Link">Members</a>
+					<a class="Link">Join Us</a>
+					<a class="Link">Contact</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="Title">
+				<h1>Moniqo</h1>
+			</div>
+			<div class="SlideShow">
+			<div class="slideImages" id="slideImages">
+				<div class="SImg" id="SImg5">5</div>
+				<div class="SImg" id="SImg6">6</div>
+				<div class="SImg" id="SImg1">1</div>
+				<div class="SImg" id="SImg2">2</div>
+				<div class="SImg" id="SImg3">3</div>
+				<div class="SImg" id="SImg4">4</div>
+				<div class="SImg" id="SImg5">5</div>
+				<div class="SImg" id="SImg6">6</div>
+				<div class="SImg" id="SImg1">1</div>
+				<div class="SImg" id="SImg2">2</div>
+			</div>
+			<button class="LeftSilde" onclick="BackSlide()"></button>
+			<button class="RightSilde" onclick="ForwardSlide()"></button>
+		</div>
+		</div>
+		<script>
+			var Imgs = document.getElementById("slideImages");
+			var Slidechildren = Imgs.querySelectorAll(".SImg").length;
+			const TransNumber = 100/Slidechildren;
+			var CurrIndex = 0;
+
+			function UpdatePos(){
+			Imgs.style.transform = `translateX(${CurrIndex * TransNumber}%)`;
+			}
+			
+			console.log(TransNumber);
+			function BackSlide(){
+				CurrIndex += 1;
+				if(CurrIndex > 0) {
+					Imgs.style.transition = ""
+					CurrIndex = -6
+					UpdatePos()
+					CurrIndex += 1;
+				}
+				setTimeout(function() {
+				Imgs.style.transition = "0.5s ease"
+				UpdatePos()
+				console.log(CurrIndex);
+				}, 25);
+			}
+			function ForwardSlide(){
+				CurrIndex -= 1;
+				if(CurrIndex < -5) {
+					Imgs.style.transition = ""
+					CurrIndex = 1
+					UpdatePos()
+					CurrIndex -= 1;
+				}
+				setTimeout(function() {
+				Imgs.style.transition = "0.5s ease"
+				UpdatePos()
+				console.log(CurrIndex);
+				}, 25);
+			}
+			
+		</script>
+	</body>
+</html>
