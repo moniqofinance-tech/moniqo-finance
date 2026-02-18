@@ -38,13 +38,56 @@
     <main>
         <section class="Centered-Section" id="Join-Us-Section">
             
-            <h1 class="Heading" id="About-Us-Heading" >Join Us</h1>
+            <h1 class="Heading" id="About-Us-Heading" >Contact Us</h1>
             
         </section>
 
-        <section class="Join-Us-Form-Section">
-            <div class="form"> 
-                hello
+        <section class="form-section">
+            <div class="form-container"> 
+                <h2>Contact our team!</h2>
+                <p>If you want to join, collaboarate, or ask questions, fill out this form below! 
+                    We will try to respond within 24 hours. If you don't receive a response by then, 
+                    feel free to resubmit the form.
+                </p>
+                
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" 
+                    value="b66a5246-e6e6-45f6-b6c3-83021c73e350">
+
+                    <input type="hidden" name="subject" value="New Moniqo Form Submission">
+
+                    <input type="hidden" name="form_name" value="Moniqo Contact Form">
+                    
+                    <div class="form-field">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" class="form-input" 
+                        placeholder="Arman" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="form-input" 
+                        placeholder="Paul" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" class="form-input" 
+                        placeholder="john.doe@example.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Associated Organization or School (if any)</label>
+                        <input type="text" name="school" id="school" class="form-input" 
+                        placeholder="Your school/organization" required>
+                    </div>
+                    <div class="form-field full">
+                        <label for="message">Why do you want to reach out?</label>
+                        <textarea type="text" name="message" id="message" class="form-input" 
+                        placeholder="Message" required></textarea>
+                    </div>
+                    <div class="submit-button full">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
             </div>
         </section>
 

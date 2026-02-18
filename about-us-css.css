@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 1.5vw;
+    font-family: "Playfair Display";
 
 }
 
@@ -112,9 +113,9 @@ a:hover {
 
 
 .Heading {
-    font-family: "Playfair Display";
     font-weight: 700;
     font-size: 3rem;
+    text-align: center;
     /* border: black solid 2px; */
 
 }
@@ -197,12 +198,11 @@ a:hover {
     background-image: url("https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9yZXN0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww");
     color: #083930;
     filter: brightness(70%);
-    padding: 4rem;
+    padding: 3rem;
 }
 
 #Meet-The-Team-Section .Heading {
     opacity: 65%;
-
 }
 
 #Join-Us-Section {
@@ -210,13 +210,12 @@ a:hover {
     background-size: cover;
     filter: brightness(65%);
     color: #f1f3d6;
-    padding: 3.5rem;
+    padding: 3rem;
 
 }
 
 #Join-Us-Section .Heading {
     opacity: 95%;
-    
 }
 
 
@@ -311,7 +310,7 @@ footer {
     /* margin-right: 30px; */
     margin-right: auto;
     margin-top: 40px;
-    box-shadow: 0 0 10px black;
+    /* box-shadow: 0 0 10px black; */
 
 }
 
@@ -357,7 +356,7 @@ footer {
 
 
 .Member-Image {
-    box-shadow: 0 0 10px rgb(29, 28, 28);
+    box-shadow: 0 0 15px rgb(29, 28, 28);
     background: #6b8d5e;
     background-image: url("images/moniqo-logo-green-transparent-upscaled.png");
     background-size: 70%;
@@ -389,8 +388,125 @@ footer {
 
 /* join us */
 
-.Join-Us-Form-Section {
-    padding: 4vw;
+.form-section {
+    padding: 10px 0;
+    background-color: #0b3d29;
+}
+
+.form-container {
+    max-width: 1200px;
+    border: 1px solid #0b3d29;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+
+
+.form-section h2 {
+    color: #bcb89a;
+    text-align: center;
+    margin: 0;
+}
+
+.form-section p {
+    color: #d2d1b8;
+    text-align: center;
+    line-height: 1.75;
+    
+}
+
+form {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    color: #0b3d29;
+    background-color: #e0e0c7;
+    box-shadow: 0 5px 15px rgb(36, 36, 36);
+
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .8rem;
+}
+
+.form-field .form-input {
+    appearance: none;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px 15px;
+    background-color: #d2d2bc;
+    transition: .6s;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.form-field .form-input:focus {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
+    background-color: #e0e0ca;
+}
+
+.form-field textarea {
+    min-height: 100px;
+    grid-column: 1 / -1;
+    resize: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+.submit-button input {
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    background-color: #a9a992;
+    color: #65655a;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .7rem;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.submit-button input:hover {
+    background-color: #0b3d29;
+    color: #d7b056;
+}
+
+@media (min-width: 750px) {
+
+    .form-section .form-container {
+        padding: 0 64px;
+    }
+
+    .form-section {
+        padding: 50px 0;
+    }
+
+    form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .form-section .form-container {
+        padding: 0 128px;
+    }
+
+    .form-section {
+        padding: 80px 0;
+    }
 }
 
 /* Cattempt to make responsive */
@@ -409,7 +525,7 @@ footer {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
     li {
         margin-right: 13px;
         font-size: 16px;  
@@ -458,7 +574,7 @@ footer {
 }
 
 
-@media (500px < width <= 750px) {
+@media (576px < width <= 768px) {
     /* li {
         margin-right: 13px;
         font-size: 16px;  
@@ -497,7 +613,7 @@ footer {
 }
 
 
-@media (750px < width <= 1200px) {
+@media (768px < width <= 1200px) {
     li {
         margin-right: 13px;
         font-size: 16px;  
