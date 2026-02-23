@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about-us_join-us_members.css">
+    <title>Join Us | Moniqo</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<!-- <script>
+
+    const observer = new IntersectionObsever(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                document.querySelectorAll
+            }
+        })
+    })
+</script> -->
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="Home.html">Logo</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="members-leadership.html">Members</a></li>
+                <li><a href="join-us.html">Join Us</a></li>
+            </ul>
+            <!-- <img src="images/Moniqo-LOGO-Green+Transparent+High-Res.png" alt="logo"> -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="Centered-Section" id="Join-Us-Section">
+            
+            <h1 class="Heading" id="About-Us-Heading" >Contact Us</h1>
+            
+        </section>
+
+        <section class="form-section">
+            <div class="form-container"> 
+                <h2>Contact our team!</h2>
+                <p>If you want to join, collaboarate, or ask questions, fill out this form below! 
+                    We will try to respond within 24 hours. If you don't receive a response by then, 
+                    feel free to resubmit the form.
+                </p>
+                
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" 
+                    value="b66a5246-e6e6-45f6-b6c3-83021c73e350">
+
+                    <input type="hidden" name="subject" value="New Moniqo Form Submission">
+
+                    <input type="hidden" name="form_name" value="Moniqo Contact Form">
+                    
+                    <div class="form-field">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" class="form-input" 
+                        placeholder="Arman" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="form-input" 
+                        placeholder="Paul" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" class="form-input" 
+                        placeholder="john.doe@example.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Associated Organization or School (if any)</label>
+                        <input type="text" name="school" id="school" class="form-input" 
+                        placeholder="Your school/organization" required>
+                    </div>
+                    <div class="form-field full">
+                        <label for="message">Why do you want to reach out?</label>
+                        <textarea type="text" name="message" id="message" class="form-input" 
+                        placeholder="Message" required></textarea>
+                    </div>
+                    <div class="submit-button full">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+       
+            <p class="Footer-Sub-Text">Contact us at: moniqofinance@gmail.com</p>
+            <p class="Footer-Sub-Text">Visit our Instagram!</p>
+            <a class="Contact-Link" href="https://www.instagram.com/moniqo.finance/" target="_blank">
+                <!--<img class="Footer-Image" src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png" alt="instaimage"> -->
+                InstagramLogo</a>
+            <p class="Footer-Sub-Text">Made by the Moniqo Team 💖</p>
+    </footer>
+
+</body>
+
+</html>
