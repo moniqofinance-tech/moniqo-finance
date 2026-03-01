@@ -1,5 +1,6 @@
-body{
-min-height: 100vh;
+.body{
+height: 100vw;
+height: 100vh;
 margin: 0;
 }
 
@@ -32,12 +33,12 @@ background: #d68a40;
 width: 90%;
 margin-inline: auto;
 margin-top:10px;
-height: 2.5px;
+height: 0.25vh;
 }
 
 .LinkList{
 align-items: center;
-margin-top: 10px;
+margin-top: 2vh;
 }
 
 .LinkList:hover{
@@ -68,19 +69,20 @@ cursor: pointer;
 display: flex;
 justify-content: center;
 align-items: center;
+margine-bottom: 2vh;
 }
 
 .Title{
 color: #d68a40;
 }
 
-.SlideShow{
-position: relative;
-z-index: 1;
-width: 100%;
+.SlideShow {
+width: 100vw;
+height: 70vh;
 display: flex;
 overflow-inline: clip;
 anchor-name: --slideShow;
+background: #F54927;
 }
 
 .SlideShow::-webkit-scrollbar {
@@ -91,19 +93,18 @@ display: none;
 display: flex;
 align-items: center;
 justify-content: center;
-padding-right: 1em;
 }
 
 .SImg{
-width: 33em;
-height: auto;
-padding: 2%;
+width: 80vw;
+height:100%;
+font-size: 100%;
 background: cornflowerblue;
-font-size: 400%;
+text-align:center;
+border-style: solid;
 text-align:center;
 align-content: center;
-translate: -189%;
-border-style: solid;
+translate: -187.5%;
 }
 
 
@@ -112,7 +113,7 @@ position: fixed;
 position-anchor: --slideShow;
 position-area: left center;
 height: 100%;
-width: 35em;
+width: 25vh;
 opacity: 0.1;
 z-index: 2;
 }
@@ -122,8 +123,9 @@ position: fixed;
 position-anchor: --slideShow;
 position-area: right center;
 height: 100%;
-width: 35em;
+width: 25vh;
 opacity: 0.1;
 z-index: 2;
 }
+
 
