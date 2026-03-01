@@ -2,6 +2,7 @@ body{
 height: 100vw;
 height: 100vh;
 margin: 0;
+background-color: #d4d3b8;
 }
 
 .Header{
@@ -10,7 +11,7 @@ top: 0;
 font-size: 110%;
 width: 100%;
 margin: 0px;
-background: #ffffff;
+background: #bcb89a;
 z-index: 10;
 }
 
@@ -29,8 +30,8 @@ object-fit: scale-down;
 }
 
 .HorzBar{
-background: #d68a40;
-width: 90%;
+background: #044538;
+width: 100%;
 margin-inline: auto;
 margin-top:10px;
 height: 0.25vh;
@@ -47,18 +48,18 @@ cursor: default;
 
 .Link{
 margin: 20px;
-color: #d68a40;
+color: #044538;
 }
 
 .Link:hover{
 margin: 20px;
-color: #de9f62;
+color: #069175;
 cursor: pointer;
 }
 
 .CurrLink{
 margin: 10px;
-color: #de9f62;
+color: #069175;
 }
 
 .CurrLink:hover{
@@ -70,10 +71,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margine-bottom: 2vh;
-}
-
-.Title{
-color: #d68a40;
+color: #044538;
 }
 
 .SlideShow {
@@ -127,6 +125,3 @@ width: 25vh;
 opacity: 0.1;
 z-index: 2;
 }
-
-
-
