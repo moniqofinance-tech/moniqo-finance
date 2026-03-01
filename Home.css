@@ -1,4 +1,4 @@
-.body{
+body{
 height: 100vw;
 height: 100vh;
 margin: 0;
@@ -127,5 +127,6 @@ width: 25vh;
 opacity: 0.1;
 z-index: 2;
 }
+
 
 
