@@ -1,5 +1,5 @@
 body{
-height: 100vw;
+width: 100vw;
 height: 100vh;
 margin: 0;
 background-color: #d4d3b8;
@@ -31,7 +31,7 @@ object-fit: scale-down;
 
 .HorzBar{
 background: #044538;
-width: 100%;
+width: 80%;
 margin-inline: auto;
 margin-top:10px;
 height: 0.25vh;
@@ -76,7 +76,7 @@ color: #044538;
 
 .SlideShow {
 width: 100vw;
-height: 70vh;
+height: 65vh;
 display: flex;
 overflow-inline: clip;
 anchor-name: --slideShow;
@@ -111,7 +111,7 @@ position: fixed;
 position-anchor: --slideShow;
 position-area: left center;
 height: 100%;
-width: 25vh;
+width: 10vw;
 opacity: 0.1;
 z-index: 2;
 }
@@ -121,7 +121,7 @@ position: fixed;
 position-anchor: --slideShow;
 position-area: right center;
 height: 100%;
-width: 25vh;
+width: 10vw;
 opacity: 0.1;
 z-index: 2;
 }
