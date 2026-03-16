@@ -16,7 +16,7 @@ html {
 body {
     margin: 0;
     padding: auto;
-    background-color: #d4d3b8;
+    background-color: #c1c0a3;
    
 }
 
@@ -38,7 +38,7 @@ main {
 
 
 header {
-    background-color: #bcb89a;
+    background-color: #c1c0a3;
     margin: 0;
     padding: 0;
     /* border-bottom: 2px solid #044538; */
@@ -48,12 +48,12 @@ header {
 
 .logo a {
     display: inline-block;
-    height: 65px;
+    height: 75px;
     background-repeat: no-repeat;
-    width: 55px;
+    width: 65px;
     text-indent: -9990px;
-    background-image: url("images/moniqo-logo-green-transparent-upscaled.png");
-    background-size: 55px 65px;
+    background-image: url("images/Icon.png");
+    background-size: 66px 80px;
     margin-left: 20px;
 
 }
@@ -69,8 +69,8 @@ header {
 /* nav */
 
 nav {
-    background-color: #d2d1b8;
-    padding: 5px;
+    background-color: #c1c0a3;
+    padding: 13px;
 }
 
 
@@ -142,6 +142,9 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    position: relative;
+    bottom: 1vw;
     /* border: black solid 2px; */
 
 }
@@ -150,7 +153,7 @@ a:hover {
 .Centered-Section .Sub-Text {
     text-align: center;
     width: 70%;
-    opacity: 75%;
+    opacity: 95%;
 
 }
 
@@ -158,7 +161,7 @@ a:hover {
 .Side-Section .Sub-Text {
     text-align: center;
     text-indent: 0px;
-    width: 95%;
+    width: 90%;
     opacity: 90%;
     /* border: black solid 2px; */
 
@@ -176,46 +179,85 @@ a:hover {
     flex-direction: column;
     background-color: #f8faf0;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
    
 }
 
+#Home-Title-Section {
+    background-image: url("images/space.jpg");
+    background-position: 50% 76%;
+    filter: brightness(55%);
+    color: #dfd26f;
+    padding-bottom: 10vw;
+    padding-top: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#Finance-Word {
+    font-style: italic;
+    font-weight: 400;
+}
+
+#Home-Title-Section .Heading {
+    font-weight: 450;
+    font-size: 4rem;
+    font-family: "Cormorant";
+    font-style: italic;
+    letter-spacing: 0.025em;
+    margin-bottom: 1rem;
+    opacity: 90%;
+    width: 50%;
+}
+
+.Nav-And-Centered-Section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#Home-Sub-Text {
+    font-size: 1.2rem;
+}
 
 #About-Us-Section {
-    background-image: url("images/cool-forest.jpg");
-    color: #f1f3d6;
+    background-image: url("images/mountain-top.jpg");
+    background-position: 50% 80%;
+    filter: brightness(55%);
+    color: #f4f7d3;
 
 }
 
 #About-Us-Section .Heading {
-    opacity: 60%;
+    opacity: 75%;
 
 }
 
 
 #Meet-The-Team-Section {
-    background-image: url("https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9yZXN0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww");
-    color: #083930;
-    filter: brightness(70%);
+    background-image: url("images/mountain-fog-cooler.jpg");
+    color: #f4f7d3;
+    filter: brightness(60%);
     padding: 3rem;
 }
 
 #Meet-The-Team-Section .Heading {
-    opacity: 65%;
+    opacity: 75%;
 }
 
 #Join-Us-Section {
     background-image: url("images/cool-lake.jpg");
-    background-size: cover;
-    filter: brightness(65%);
-    color: #f1f3d6;
+    filter: brightness(50%);
+    color: #f4f7d3;
     padding: 3rem;
 
 }
 
 #Join-Us-Section .Heading {
-    opacity: 95%;
+    opacity: 75%;
 }
 
 
@@ -266,7 +308,7 @@ footer {
     flex-direction: column;
     /* border: black solid 2px; */
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     gap: 10px;
     border-top: black solid 1px;
 }
@@ -360,7 +402,7 @@ footer {
 .Member-Image {
     box-shadow: 0 0 15px rgb(29, 28, 28);
     background: #6b8d5e;
-    background-image: url("images/moniqo-logo-green-transparent-upscaled.png");
+    background-image: url("images/Icon.png");
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -487,6 +529,8 @@ form {
     color: #d7b056;
 }
 
+/* responsive stuff */
+
 @media (min-width: 750px) {
 
     .form-section .form-container {
@@ -512,8 +556,6 @@ form {
         padding: 80px 0;
     }
 }
-
-/* Cattempt to make responsive */
 
 
 @media (max-width: 1200px) {
